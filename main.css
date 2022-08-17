@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+body{
+    font-family: 'Noto Serif', serif;
+}
+.containers{
+    display: flex;
+    flex-direction: column;
+    /* height: 100vh; */
+    /* background-color: #413e4a; */
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 8px 16px;
+}
+.banner{
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/f/f1/Indonesia_declaration_of_independence_17_August_1945.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(5px);
+    padding: 350px 0;
+    text-align: center;
+}
+.banner-wording{
+    margin: 0 auto;
+    color: black;
+}
+.sub-banner{
+    margin: 50px;
+}
+.sub-banner .sub-banner-wording::first-letter{
+    font-size: 200%;
+    color: red;
+}
+.sub-banner .sub-banner-wording{
+    text-align: center;
+}
+.main-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+}
+.main-content .content{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    /* background-color: red; */
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+}
+.main-content .timeline{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.timeline .years{
+    color: black;
+    font-weight: 700;
+    /* width: 80px;
+    height: 80px;
+    line-height: 80px;
+    border: 1px solid red;
+    border-radius: 100%; */
+    margin: auto;
+}
+.timeline img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.main-content .content .article{
+    padding: 8px  16px;
+}
+
+@media only screen and (max-width: 700px) {
+    .banner{
+        padding: 150px 0;
+    }
+    .main-content .content{
+        flex-direction: column;
+    }
+    .main-content .content-reverse{
+        flex-direction:  column-reverse;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .banner{
+        background-size: cover;
+    }
+    .sub-banner{
+        margin: 25px;
+    }
+}
